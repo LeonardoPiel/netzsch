@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+## Prerequisites
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Desktop Application (Application 1)
 
-## Available Scripts
+To run the desktop application, make sure you have the following prerequisites installed:
 
-In the project directory, you can run:
+-   **.NET Runtime**: The application is built on .NET and requires the .NET Runtime to be installed. The project targets `net7.0-windows`, so ensure you have the appropriate version of .NET runtime for Windows installed.
+`<PropertyGroup>
+  <OutputType>WinExe</OutputType>
+  <TargetFramework>net7.0-windows</TargetFramework>
+  <Nullable>enable</Nullable>
+  <UseWindowsForms>true</UseWindowsForms>
+  <ImplicitUsings>enable</ImplicitUsings>
+</PropertyGroup>
+`
+- **System.Net.WebSockets Package**: The application uses WebSockets for communication. Ensure that the `System.Net.WebSockets` package is installed.
+`<ItemGroup>
+  <PackageReference Include="System.Net.WebSockets" Version="4.3.0" />
+</ItemGroup>`
 
-### `npm start`
+### Web Application (Application 2)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To run the web application, you'll need the following prerequisites:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-   **Node.js**: The project is built using Node.js and npm. Make sure you have Node.js installed on your machine. You can download it [here](https://nodejs.org/).
 
-### `npm test`
+## Setup Instructions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Follow these steps to set up and run the applications:
+-   Clone the repository: `git clone https://github.com/LeonardoPiel/netzsch.git`
+1.  **Desktop Application (Application 1)**:
+    -   Navigate to the `windows_app` directory.
+    -   Open the solution file `netzsch_test.sln` in Visual Studio.
+    -   Build and run the application using Visual Studio.
+2.  **Web Application (Application 2)**:
+    
+    -   Navigate to the `app2` directory.
+    -   Install dependencies `npm install`.
+    -  	Navigate to the `server` directory.
+    -   Run `node server.js`
+    -   Navigate to the `client` directory.
+    -   Install dependencies: `npm install`
+    -   Start the server: `npm start`
+    -   The web application will be running at `http://localhost:3000`.
+## Details
+The websocket is running on port 5500.
