@@ -4,7 +4,7 @@
 
 To run the desktop application, make sure you have the following prerequisites installed:
 
--   **.NET Runtime**: The application is built on .NET and requires the .NET Runtime to be installed. The project targets `net7.0-windows`, so ensure you have the appropriate version of .NET runtime for Windows installed.
+-   **.NET Runtime**: The application is built on .NET and requires the .NET Runtime to be installed. The project targets `net7.x`, so ensure you have the appropriate version of .NET runtime for Windows installed.
 `<PropertyGroup>
   <OutputType>WinExe</OutputType>
   <TargetFramework>net7.0-windows</TargetFramework>
@@ -43,4 +43,4 @@ Follow these steps to set up and run the applications:
     -   Start the server: `npm start`
     -   The web application will be running at `http://localhost:3000`.
 ## Details
-The websocket is running on port 5500.
+On localhost the websocket is running on port 5500.
