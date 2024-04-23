@@ -43,4 +43,6 @@ Follow these steps to set up and run the applications:
     -   Start the server: `npm start`
     -   The web application will be running at `http://localhost:3000`.
 ## Details
-On localhost the websocket is running on port 5500.
+- On localhost the websocket is running on port 5500.
+- On cloud the websocket server is running on: https://netzsch.onrender.com
+- On cloud the client app is running on: https://netzsch-client.onrender.com
