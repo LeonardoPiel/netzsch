@@ -11,8 +11,8 @@ To run the desktop application, make sure you have the following prerequisites i
   <Nullable>enable</Nullable>
   <UseWindowsForms>true</UseWindowsForms>
   <ImplicitUsings>enable</ImplicitUsings>
-</PropertyGroup>
-`
+</PropertyGroup>`
+
 - **System.Net.WebSockets Package**: The application uses WebSockets for communication. Ensure that the `System.Net.WebSockets` package is installed.
 `<ItemGroup>
   <PackageReference Include="System.Net.WebSockets" Version="4.3.0" />
