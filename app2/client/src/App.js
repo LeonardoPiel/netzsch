@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-const WebSocketClient = new WebSocket('ws://localhost:5500');
+const PORT = 5500;
+console.log(PORT);
+const WebSocketClient = new WebSocket('ws://localhost:' + PORT);
 
 function App() {
   const [inputText, setInputText] = useState('');

@@ -1,35 +1,3 @@
-// const express = require('express');
-// const http = require('http');
-// const WebSocket = require('ws');
-// require('dotenv').config()
-
-// const app = express();
-// const server = http.createServer(app);
-// const wss = new WebSocket.Server({ server });
-
-
-// // Evento de conexão WebSocket
-// wss.on('connection', (ws) => {
-//     console.log('Client connected');
-
-//     // Evento de mensagem recebida
-//     ws.on('message', (message) => {
-//         console.log(`Received message from client: ${message}`);
-
-//         // ws.send(String(message).toUpperCase());
-//     });
-
-//     // Evento de fechamento da conexão
-//     ws.on('close', () => {
-//         console.log('Client disconnected');
-//     });
-// });
-
-// // Iniciar servidor
-// const PORT = process.env.PORT;
-// server.listen(PORT, () => {
-//     console.log(`Server running on port ${PORT}`);
-// });
 const express = require('express');
 const http = require('http');
 const WebSocket = require('ws');
