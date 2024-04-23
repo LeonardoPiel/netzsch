@@ -46,3 +46,7 @@ Follow these steps to set up and run the applications:
 - On localhost the websocket is running on port 5500.
 - On cloud the websocket server is running on: https://netzsch.onrender.com
 - On cloud the client app is running on: https://netzsch-client.onrender.com
+
+## Optional Requirement
+
+- **Multiple Instances Support**: The solution supports a scenario where multiple instances of Application 1 can connect and sync with a single instance of Application 2. As long as multiple instances of Application 1 are connected to the same WebSocket server (Application 2), they will be able to synchronize data between them through this server.
