@@ -19,7 +19,8 @@ namespace netzch_test
         {
             InitializeComponent();
             _websocket = new WebSocketClient();
-            _uri = new Uri("ws://localhost:5500"); // Usando ws:// para WebSocket
+            //_uri = new Uri("ws://localhost:5500"); // TESTANDO NO LOCALHOST
+            _uri = new Uri("wss://netzsch.onrender.com"); // EM AMBIENTE DE HOMOLOGAÇÃO - NUVEM 
         }
         private async void FrmHome_Load(object sender, EventArgs e)
         {
